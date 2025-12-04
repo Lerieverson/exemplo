@@ -1,0 +1,219 @@
+/* =========================
+   RESET E CONFIGURAÇÕES BASE
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: lch(87.67% 2.9 19.41 / 0.89);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================
+   CABEÇALHO E NAVEGAÇÃO
+========================= */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.logo span {
+    color: hwb(182 9% 12%);
+    border-radius: 100%;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #00bcd4;
+}
+
+/* =========================
+   SEÇÃO HERO
+========================= */
+.hero {
+    background: linear-gradient(135deg, #a3416f, hsl(327, 93%, 30%));
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero span {
+    color: #ffe082;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: oklab(62.18% 0.24011 0.02259);
+    color: lab(95.05% 1.18 -0.14);
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #007b9e;
+    color: #fff;
+}
+
+/* =========================
+   SEÇÕES GERAIS
+========================= */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #007b9e;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #00bcd4;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+/* =========================
+   HABILIDADES
+========================= */
+.hab-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.hab {
+    background: #ce2373;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.hab:hover {
+    transform: scale(1.1);
+}
+
+/* =========================
+   PROJETOS
+========================= */
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.projeto {
+    background: hsla(0, 0%, 100%, 0.863);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+}
+
+.projeto img {
+    width: 25%;
+    border-radius: 100%;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   CONTATO
+========================= */
+/* Contatos */
+.contatos {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.contatos a {
+    text-decoration: none;
+    color: #007b9e;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.contatos a:hover {
+    color: hsl(323, 100%, 42%);
+}
+
+/* Ícones antes do texto (pseudo-elementos) */
+.contatos a::before {
+    margin-right: 8px;
+}
+
+.contatos a.email::before {
+    content: "📧";
+}
+
+.contatos a.instagram::before {
+    content: "📸";
+}
+
+.contatos a.linkedin::before {
+    content: "💼";
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+footer {
+    background: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
